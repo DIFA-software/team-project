@@ -1,13 +1,19 @@
-import './App.css';
+import React from "react"
+import { BrowserRouter as Router} from 'react-router-dom';
+import Header from "./component/Header";
+import Footer from "./component/Footer";
+import Main from "./component/Main";
+import Search from "./component/Search";
+
 
 function App() {
   return (
-    <div className="App">
-     
-       <div>
-        <h1> This is eCommerce by DIFA Software </h1>
-       </div>
-    </div>
+    <Router>
+      <Search/>
+      <Header/>
+      <Main/>
+      <Footer/>
+    </Router>
   );
 }
 
